@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Projector Test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:wght@400;500&display=swap" 
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a id="go-back" onclick="history.back()" class="nav__link">
+                <div class="nav__icon nav__icon--back"></div>
+                <span>Back</span>
+              </a>
+            </li>
+
+            <div class="nav__right">
+              <li id="favorite" class="nav__item">
+                <a>
+                  <div class="nav__icon nav__icon--favorite"></div>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#">
+                  <div class="nav__icon nav__icon--folder"></div>
+              </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="main-content__section filter-section">
+        <form class="filter-section__form" action="#" method="GET">
+          <label class="filter-section__form-element">
+            <input
+              id="artist"
+              type="text"
+              class="filter-section__input input"
+              name="artist"
+              placeholder="Artist"
+              required
+            >
+            <div class="input__error" id="artist-error"></div>
+          </label>
+
+          <div class="filter-section__center">
+            <label class="filter-section__form-element dropdown">
+              <div class="dropdown__button">Genre</div>
+              <input class="dropdown__input" type="checkbox" id="genre">
+              <ul id="genre-dropdown" class="dropdown__menu"></ul>
+            </label>
+
+            <label class="filter-section__form-element dropdown">
+              <div class="dropdown__button">Decade</div>
+              <input class="dropdown__input" type="checkbox" id="decade">
+              <ul id="decade-dropdown" class="dropdown__menu"></ul>
+            </label>
+          </div>
+
+          <label class="filter-section__form-element dropdown">
+            <div class="dropdown__button">Country</div>
+            <input class="dropdown__input" type="checkbox" id="country">
+            <ul id="country-dropdown" class="dropdown__menu"></ul>
+          </label>
+
+          <button class="filter-form__button button" type="submit">
+            Search
+          </button>
+        </form>
+      </section>
+
+      <section class="main-content__section gallery-section">
+        <div 
+          id="cards-container" 
+          class="gallery-section__cards-container">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div id="pagination" class="pagination"></div>
+    </footer>
+
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>

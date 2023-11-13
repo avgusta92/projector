@@ -1,0 +1,34 @@
+.main-content {
+  @extend %container;
+  background-color: white;
+
+  &__section {
+    margin-top: 16px;
+    margin-bottom: 18px;
+  }
+
+  .filter-section {
+    &__form-element {
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    &__center {
+      display: flex;
+  
+      .dropdown:first-child {
+        margin-right: 12px;
+      }
+    }
+  }
+  
+  .gallery-section {
+    &__cards-container {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 12px;
+      row-gap: 14px;
+    }
+  }
+}

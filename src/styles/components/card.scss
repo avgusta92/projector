@@ -1,0 +1,57 @@
+.card {
+    &__image {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    &__like-button {
+        position: absolute;
+        
+        div {
+          width: 24px;
+          height: 24px;
+          margin-top: 10px;
+          margin-left: 10px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../../images/like.svg);
+        }
+    }
+
+    &__info {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 14px;
+        color: $dark-color;
+        margin-top: 8px;
+        margin-bottom: 11px;
+
+        &--h1 {
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        &--h2 {
+            font-weight: 500;
+        }
+
+        &--specification {
+            margin-top: 7px;
+
+            div {
+                font-weight: 400;
+                margin-bottom: 3px;
+
+                span:first-child {
+                    color: $gray;
+                }
+            }
+        }
+
+        &--button {
+            background-color: $dark-color;
+        }
+    }
+}

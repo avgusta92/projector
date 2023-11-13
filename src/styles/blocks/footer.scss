@@ -1,0 +1,17 @@
+.footer {
+    @extend %container;
+    background-color: white;
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        margin-bottom: 36px;
+
+        &__button {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+        }
+    }
+}

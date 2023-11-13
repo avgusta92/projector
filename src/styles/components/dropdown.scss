@@ -1,0 +1,61 @@
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    &__button {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        border: 1px solid $light-dray;
+        color: $dark-dray;
+        padding: 10px 14px;
+        width: 100%;
+        border-radius: $border-radius;
+        display: flex;
+        align-items: center;
+
+        &:after {
+            content: url('../../images/dropdown.svg');
+            position: absolute;
+            right: 14px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__menu {
+        z-index: 1;
+        position: absolute;
+        border: 1px solid #ccc;
+        border-radius: $border-radius;
+        padding: 0;
+        margin: 2px 0 0 0;
+        box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+        background-color: #ffffff;
+        list-style-type: none;
+
+        li {
+            padding: 10px 20px;
+            cursor: pointer;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: #f6f6f6;
+            }
+        }
+    }
+
+    &__input + &__menu {
+        display: none;
+    } 
+
+    &__input:checked + &__menu {
+        display: block;
+    }
+}

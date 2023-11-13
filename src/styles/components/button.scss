@@ -1,0 +1,36 @@
+.button {
+    background-color: $main-color;
+    border-radius: $border-radius;
+    color: white;
+    border: transparent;
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        margin-left: 6px;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        &--plus {
+          background-image: url(../../images/plus.svg);
+        }
+    }
+
+    &--inactive {
+        background-color: white;
+        color: $gray;
+
+        &:hover{
+            border: 1px solid $light-dray;
+        }
+    }
+}
