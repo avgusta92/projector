@@ -8,7 +8,7 @@
 
     &__like-button {
         position: absolute;
-        
+
         div {
           width: 24px;
           height: 24px;
@@ -17,7 +17,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
-          background-image: url(../../images/like.svg);
+          background-image: url(/images/like.svg);
         }
     }
 

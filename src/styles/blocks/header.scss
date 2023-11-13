@@ -41,16 +41,16 @@
       background-position: center;
   
       &--back {
-        background-image: url(../../images/back.svg);
+        background-image: url(/images/back.svg);
         margin-right: 6px;
       }
   
       &--favorite {
-        background-image: url(../../images/favorite.svg);
+        background-image: url(/images/favorite.svg);
       }
   
       &--folder {
-        background-image: url(../../images/folder.svg);
+        background-image: url(/images/folder.svg);
       }
     }
 
